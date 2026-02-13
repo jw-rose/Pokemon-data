@@ -1,0 +1,47 @@
+
+html body {
+    margin: 0;
+    padding: 0;
+}
+header img {
+    mix-blend-mode: darken;
+}
+header h1 {
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+header {
+    background: linear-gradient(135deg, #575ca0 0%, #ff000046 100%); /* Red gradient */
+    padding: 30px;
+    border-bottom: 5px solid #3B4CCA; /* Blue border */
+}
+
+
+
+#container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background: linear-gradient(160deg, rgb(214, 161, 97) 0%,  rgb(39, 185, 225) 100%)
+}
+
+.poke-card {
+    border: solid black;
+    border-radius: 10px ;
+    background-image: url(src/poke-bg.jpg);
+    background-size: 160px;
+    mix-blend-mode:;
+    background-position: center;
+    text-align: center;
+    width: 200px;
+}
+
+.poke-card h1 {
+    font-family: monospace;
+    color: #3B4CCA;
+}
+
+
