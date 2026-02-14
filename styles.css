@@ -13,9 +13,9 @@ header h1 {
 }
 
 header {
-    background: linear-gradient(135deg, #575ca0 0%, #ff000046 100%); /* Red gradient */
+    background: linear-gradient(189deg, #d33939 0%, #e7e73946 100%); /* Red gradient */
     padding: 30px;
-    border-bottom: 5px solid #3B4CCA; /* Blue border */
+    border-bottom: 5px solid #1832c3; /* Blue border */
 }
 
 
@@ -37,7 +37,17 @@ header {
     background-position: center;
     text-align: center;
     width: 200px;
+    box-shadow: 2px 4px 6px #3B4CCA;
 }
+
+.poke-card:hover {
+
+    transform: rotateX(10deg);
+    animation: ease-in-out;
+    border-color: rgb(228, 21, 21);
+}
+
+
 
 .poke-card h1 {
     font-family: monospace;
