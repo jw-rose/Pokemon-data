@@ -1,57 +1,38 @@
-
-html body {
-    margin: 0;
-    padding: 0;
-}
-header img {
-    mix-blend-mode: darken;
-}
-header h1 {
-    text-align: center;
-    margin: 20px 0;
-    
-}
-
-header {
-    background: linear-gradient(189deg, #d33939 0%, #e7e73946 100%); /* Red gradient */
-    padding: 30px;
-    border-bottom: 5px solid #1832c3; /* Blue border */
-}
-
-
-
-#container {
-    padding: 10px;
+.search-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    background: linear-gradient(160deg, rgb(214, 161, 97) 0%,  rgb(39, 185, 225) 100%)
+    flex-direction: column;
+    gap: .50rem;
 }
 
-.poke-card {
-    border: solid black;
-    border-radius: 10px ;
-    background-image: url(src/poke-bg.jpg);
-    background-size: 160px;
-    mix-blend-mode:;
-    background-position: center;
-    text-align: center;
-    width: 200px;
-    box-shadow: 2px 4px 6px #3B4CCA;
-}
-
-.poke-card:hover {
-
-    transform: rotateX(10deg);
-    animation: ease-in-out;
-    border-color: rgb(228, 21, 21);
+input {
+    font-size:  1rem;
 }
 
 
+.poke-cards {
+    display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   gap: .5rem;
+   margin-top: 1rem;
 
-.poke-card h1 {
+}
+
+.card {
     font-family: monospace;
-    color: #3B4CCA;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: bisque;
+    padding: .5rem
 }
 
+.card > .header {
+    margin-bottom: .25rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(19, 19, 126);
 
+}
+
+.hide {
+    display: none;
+}

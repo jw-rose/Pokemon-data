@@ -3,44 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon-Data</title>
+    <title>Pokemon Data</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
+<header>
+    <h1>Pokemon Data</h1>
+</header>
 
-    <header>
+<div class="search-wrapper">
+    <label for="search">Find Pokemon</label>
+    <input type="search" id="search" data-search>
+</div>
+<div class="poke-cards" poke-cards-container>
+    <template poke-template>
+    <div class="card">
+        <div class="header" poke-name></div>
+        <img class="poke-img" poke-image />
+        <div class="poke-type" poke-type></div>
+        <div class="poke-height" poke-height></div>
+    </div>
+    </template>
 
-        <h1>
-    <img src="src/pokemon-logo.jpg" alt="Pokemon Logo">
-</h1>
-
-    </header>
-
-
-<div class="search-poke">
-    <input type="text"
-    class="find-poke"
-    placeholder="Search Pokemon...">
 </div>
 
- <div id="container"></div>
- <button id="show-less">Less Pokemon</button>
- <button id="show-more">More Pokemon</button>
-
-
-
-
-    <footer>
-
-        <p>This is the footer</p>
-    </footer>
-
-   
 
 
 
 
 
-    <script src="script.js"></script>
+<body>
+    
 </body>
 </html>
